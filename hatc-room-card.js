@@ -1,55 +1,6 @@
-/*
-Example
-
-type: custom:hatc-room-card
-title: Cuisine
-background_image: /local/area/kitchen.jpg
-
-tap_action:
-  action: navigate
-  navigation_path: /lovelace-mushroom/kitchen
-
-entities:
-  - entity: sensor.fibaro_fenetre_porte_salon_access_control_door_state
-    device_class: sliding-door
-    position: top.right
-  - entity: sensor.fibaro_fenetre_porte_salon_air_temperature
-  - entity: sensor.all_estimated_kitchen_power
-  - entity: light.ampoules_plafond_cuisine
-    position: bottom
-  - entity: switch.011030387805000808_bsh_common_setting_powerstate
-    position: bottom
-  - entity: select.siemens_hs658gxs7c_68a40e607fda_bsh_common_setting_powerstate
-    show_state: false
-    icon: mdi:stove
-    position: bottom
-
-
--------------------------------------------------------------
-
-
-type: custom:hatc-room-card
-title: Hall d'entrée
-background_image: /local/area/entrance.jpg
-
-tap_action:
-    action: navigate
-    navigation_path: /lovelace-mushroom/entrance
-
-entities:
-  - entity: sensor.fibaro_porte_dentree_access_control_door_state
-    device_class: door
-    position: top.right
-  - entity: sensor.temperature_moyenne_hall_d_entree
-    device_class: temperature
-  - entity: sensor.all_estimated_entrance_hall_power
-  - entity: light.ampoules_plafond_couloir
-    position: bottom
-
-*/
-
-import handleClick  from "./hass/handleClick.js";
-import {html, css, LitElement} from './core/lit-core.min.js';
+var LitElement = LitElement || Object.getPrototypeOf(customElements.get("ha-panel-lovelace"));
+var html = LitElement.prototype.html;
+var css = LitElement.prototype.css;
 
 function powerColor(entityType, value){
     var entityClass = "";

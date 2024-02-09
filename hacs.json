@@ -1,6 +1,5 @@
 {
   "name": "HATC Room Card",
-  "content_in_root": false,
   "filename": "hatc-room-card.js",
-  "render_readme": false
+  "render_readme": true
 }
