@@ -39,7 +39,6 @@ type: custom:hatc-room-card
 entities:
   - entity: sensor.fibaro_fenetre_porte_salon_access_control_door_state
 ```
-![Minimum](https://github.com/tagcashdev/hatc-gauge-card/blob/main/img/minimum.png)
 
 #### Default
 
